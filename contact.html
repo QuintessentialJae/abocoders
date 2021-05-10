@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboCoders Academy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c00058ab49.js"></script>
+    </head>
+<body>
+    <section class="sub-header">
+      <nav>
+         <a href="index.html"><img src="./images/Abocoders logo.png" alt="AboCoders Logo"></a>
+         <div class="nav-links" id="navLinks">
+             <!-- Closing Icon -->
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="about.html">ABOUT US</a></li>
+                 <li><a href="course.html">COURSES</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+         </div>
+         <!-- Menu Icon -->
+         <i class="fa fa-bars" onclick="showMenu"></i>
+  
+      </nav>
+     <h1>Contact Us</h1>
+    </section>
+
+   <!-- CONTENT -->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9678650059477!2d7.429233814431269!3d9.066691990894817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e74d6938586d1%3A0x49e1a6621c5b6873!2sBright%20Star%20Plaza!5e0!3m2!1sen!2sng!4v1620501293327!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </section>
+
+   <section class="contact-us">
+       <div class="row">
+           <div class="contact-col">
+               <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Bright Star Plaza</h5>
+                    <p>50 Ebitu Ukiwe St, Jabi, Abuja</p>
+                </span> 
+               </div>
+               <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>08174548158</h5>
+                    <p>Monday to Wednesday, 9AM to 4PM</p>
+                </span> 
+               </div>
+               <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>Email us your questions</h5>
+                    <p>ema@aspilosfoundation.org.ng</p>
+                </span> 
+               </div>
+           </div>
+           <div class="contact-col">
+               <form action="form-handler.php" method="post">
+                   <input type="text" name="name" placeholder="Enter your name" required>
+                   <input type="email" name="email" placeholder="Enter your email address" required>
+                   <input type="text" name="subject" placeholder="Enter subject" required>
+                   <textarea rows="8" name="message" placeholder="Type in your message" required></textarea>
+                   <button type="submit" class="hero-btn">Send Message</button>
+               </form>
+           </div>
+       </div>
+      
+   </section>
+   
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>Contact us today</h4>
+        <div class="social-icons">
+            <a href="https://facebook.com/AspilosFoundation" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/AspilosFdn" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://wa.link/zdme68" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://instagram.com/AspilosFoundation" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Janet Eriba ex-Abocoders student</p>
+    </section>
+
+    
+    <!-- JAVASCRIPT FOR TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

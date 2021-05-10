@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboCoders Academy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c00058ab49.js"></script>
+    </head>
+<body>
+    <section class="sub-header">
+      <nav>
+         <a href="index.html"><img src="./images/Abocoders logo.png" alt="AboCoders Logo"></a>
+         <div class="nav-links" id="navLinks">
+             <!-- Closing Icon -->
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="about.html">ABOUT US</a></li>
+                 <li><a href="course.html">COURSES</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+         </div>
+         <!-- Menu Icon -->
+         <i class="fa fa-bars" onclick="showMenu"></i>
+  
+      </nav>
+     <h1>About Us</h1>
+    </section>
+
+   <!-- CONTENT -->
+   <section class="about-us">
+       <div class="row">
+           <div class="about-col">
+               <h1>Nigeria's best female coding academy</h1>
+               <p>Abocoders is an initiative of a non-governmental organisation called Aspilos foundation. The aim of the program is to remove obstacles to a productive and prosperous life for young women in underserved locations in Nigeria. The project improves the life of its beneficiaries by establishing secure and sustainable livelihoods for them using ICT training with an emphasis on a more wholesome IT professional experience as a means of empowerment. The overall goal of the project is increased financial returns from technology fields for its beneficiaries so that they can generate income and create a better economic situation for themselves. During the duration of the training which is over four(4) months, we will train our beneficiaries on Web Development, Data Science and Graphic Design depending on their choice across all our locations in Nigeria. The good news is that you don't need to have any prior knowledge. Just come as you are with an enthusiasm to learn and Abocoders will turn you into a tech star.</p>
+           </div>
+           <div class="about-col">
+               <img src="./images/web1.jpg" alt="">
+           </div>
+       </div>
+   </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>Contact us today</h4>
+        <div class="social-icons">
+            <a href="https://facebook.com/AspilosFoundation" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/AspilosFdn" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://wa.link/zdme68" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://instagram.com/AspilosFoundation" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Janet Eriba ex-Abocoders student</p>
+    </section>
+    
+    <!-- JAVASCRIPT FOR TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
